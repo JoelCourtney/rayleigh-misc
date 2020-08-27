@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sed 's/shellslice_levels_nrm.*/shellslice_levels_nrm = 0.01, 0.2, 0.4, 0.6, 0.8, 0.99/' main_input > new_input
+sed -i 's/shellslice_values.*/shellslice_values = 1, 2, 3, 201, 202, 203, 501, 801, 802, 803, 2807, 2809, 1101/' new_input
+
+sed -i 's/azavg_values.*/azavg_values = 1, 2, 3, 201, 202, 203, 501, 801, 802, 803, 2807, 2809, 1101/' new_input
+
+sed -i 's/full3d_values.*/full3d_values = 1, 2, 3, 64, 201, 202, 203, 501, 801, 802, 803, 2807, 2809, 1101/' new_input
